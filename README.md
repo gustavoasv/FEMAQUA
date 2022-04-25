@@ -3,13 +3,6 @@
   FEMAQUA
 </h1>
 
-
-<p align="center">
-  <a href="#-Sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  
-</p>
-
 ## Sobre o projeto
 <p>Esta aplicação é um simples repositório para listar e gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.</p>
 
