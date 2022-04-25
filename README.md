@@ -41,6 +41,6 @@ $ npm start
 ## Login
 ```
 email: admin@admin.com
-senha: admin123
+password: admin123
 
 ```
