@@ -21,7 +21,7 @@ Tecnologias que eu usei para desenvolver este projeto
 
 ### como executar a aplicação 
 
-- antes de começar é necessário ter o git e o node instalado na sua máquina
+- antes de começar é necessário ter o git e o node instalado em sua máquina
 
 ****
 ### 
