@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { api } from "../../services/api";
 import { ButtonModal, ButtonsArea, Card, customStyles, Main } from "./styles";
 import Modal from "react-modal";
@@ -26,7 +26,7 @@ export const Tools = (Props: Props) => {
   const getTools = async () => {
     await api
       .get("tools", { params: { token: token } })
-      .then((response) => setToolList(response.data));
+      .then((response: { data: SetStateAction<TypeTools[]>; }) => setToolList(response.data));
   };
 
   const handleOpenModal = (id: number) => {
