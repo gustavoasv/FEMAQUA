@@ -38,3 +38,9 @@ $ npm install
 # execute o projeto 
 $ npm start
 ```
+## Login
+```
+email: admin@admin.com
+senha: admin123
+
+```
