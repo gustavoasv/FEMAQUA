@@ -15,12 +15,22 @@ export const FormArea = styled.div`
   height: 90%;
   margin-top: 40px;
   padding: 30px;
+
+  @media (min-width: 320px) and (max-width: 609px) {
+    margin: 0 auto;
+  }
 `;
 
 export const AsideRight = styled.div`
   width: 70%;
   height: 100%;
   background-color: blue;
+
+  @media (min-width: 320px) and (max-width: 408px) {
+    display: none;
+    margin: 0 0 0 30px;
+    background: red;
+  }
 `;
 
 export const Texts = styled.div`
@@ -32,6 +42,12 @@ export const Texts = styled.div`
     font-size: 17px;
     font-weight: bold;
   }
+
+  @media (min-width: 320px) and (max-width: 726px) {
+    p{
+      font-size: 13px;
+  }
+}
 `;
 
 export const Input = styled.input`
@@ -61,11 +77,11 @@ export const ButtonArea = styled.div`
 
   button {
     width: 120px;
-  height: 40px;
-  cursor: pointer;
-  background-color: #E1E7FD;
-  border: 0;
-  outline: 0;
-  color: #365DF0;
+    height: 40px;
+    cursor: pointer;
+    background-color: #e1e7fd;
+    border: 0;
+    outline: 0;
+    color: #365df0;
   }
 `;
