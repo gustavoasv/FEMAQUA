@@ -18,7 +18,6 @@ type TypeTools = {
 let requestTimer: number
 
 export const Home = () => {
-  const [newTool, setNewTool] = useState(false);
   const [showInput, setShowInput] = useState(true);
   const [tagListFiltered, setTagListFiltered] = useState<TypeTools[]>([]);
   const [tag, setTag] = useState("");
