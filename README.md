@@ -19,17 +19,17 @@ Tecnologias que eu usei para desenvolver este projeto
 
 ## Getting started
 
-### como executar a aplicação 
+### pré requisitos
 
-- antes de começar é necessário ter o git e o node instalado em sua máquina
+- Antes de começar é necessário ter o git e o node instalado em sua máquina
 
 ****
-### 
+### Rodando o Front-End 
 ```bash
 # clone o repositório 
 $ https://github.com/gustta03/femaqua.git
 
-# acesse o repositório 
+# acesse a pasta do projeto
 $ cd femaqua
 
 # instale as dependências
