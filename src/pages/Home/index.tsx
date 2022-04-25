@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { HeaderTitles } from "../../components/HeaderTitles";
 import { NewToolForm } from "../NewTollForm";
 import { Tools } from "../../components/Tools";
@@ -15,7 +15,7 @@ type TypeTools = {
   tags: string[];
 };
 
-let requestTimer: NodeJS.Timeout;
+let requestTimer: number
 
 export const Home = () => {
   const [newTool, setNewTool] = useState(false);
@@ -24,6 +24,7 @@ export const Home = () => {
   const [tag, setTag] = useState("");
   const goNewTool = useNavigate();
   const token = getToken();
+
   const openFormNewTool = () => {
     goNewTool("/newtool");
     setShowInput(false);
@@ -33,13 +34,13 @@ export const Home = () => {
     const getToolByTag = async () => {
       await api
         .get(`tools?tag=${tag}`, { params: { token } })
-        .then((response) => setTagListFiltered(response.data));
+        .then((response: { data: SetStateAction<TypeTools[]>; }) => setTagListFiltered(response.data));
     };
 
     if (requestTimer) {
       clearTimeout(requestTimer);
     }
-    requestTimer = setTimeout(getToolByTag, 900);
+    requestTimer = setTimeout(getToolByTag, 900) as unknown as number
   }, [tag]);
 
   return (

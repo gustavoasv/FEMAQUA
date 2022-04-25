@@ -10,7 +10,6 @@ export const RequireAuth = ({ children }: Children) => {
     return children
   } else {
     window.location.href = '/login'
-    console.log(Logged)
     return null;
   }
 };
