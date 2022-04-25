@@ -48,6 +48,9 @@ export const ActionsArea = styled.div<Props>`
     width: 120px;
     height: 40px;
     cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #0E995D;
+    color: #fff;
   }
 `;
 
