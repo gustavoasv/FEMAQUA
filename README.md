@@ -27,7 +27,7 @@ Tecnologias que eu usei para desenvolver este projeto
 ### Rodando o Front-End 
 ```bash
 # clone o repositório 
-$ https://github.com/gustta03/femaqua.git
+$ git clone https://github.com/gustta03/femaqua.git
 
 # acesse a pasta do projeto
 $ cd femaqua
