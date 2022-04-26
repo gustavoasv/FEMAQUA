@@ -6,6 +6,12 @@
 ## Sobre o projeto
 <p>Esta aplicação é um simples repositório para listar e gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.</p>
 
+## Features
+- [x] Login
+- [x] Cadastrar ferramentas favoritas
+- [x] Deletar uma ferramenta
+- [x] Filtrar ferramentas por tags
+
 ## Tecnologias
 
 Tecnologias que eu usei para desenvolver este projeto
