@@ -2,6 +2,7 @@
 <h1 align="center">
   FEMAQUA
 </h1>
+<p align="center">Ferramentas maravilhosas que adoro</p>
 
 ## Sobre o projeto
 <p>Esta aplicação é um simples repositório para listar e gerenciar ferramentas com seus respectivos nomes, links, descrições e tags.</p>
