@@ -26,7 +26,7 @@ Tecnologias que eu usei para desenvolver este projeto
 
 ## Getting started
 
-### pré requisitos
+### pré-requisitos
 
 - Antes de começar é necessário ter o <a href="https://git-scm.com/">git</a> e o <a href="https://nodejs.org/en/">node</a> instalado em sua máquina
 
