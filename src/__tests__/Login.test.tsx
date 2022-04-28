@@ -28,8 +28,9 @@ it("should click in the button entrar and render home page", () => {
   fireEvent.change(inputEmail, {target: {value: 'admin@admin.com'}})
   fireEvent.change(inputSenha, {target: {value: 'admin123'}})
 
-  const TitleInScreen = screen.queryByText('Ferramentas maravilhosas que adoro')
   fireEvent.click(button)
+  
+  const TitleInScreen = screen.queryByText('Ferramentas maravilhosas que adoro')
   expect(TitleInScreen).toBeInTheDocument()
  
 });
