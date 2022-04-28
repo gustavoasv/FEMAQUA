@@ -30,8 +30,10 @@ it("should click in the button entrar and render home page", () => {
 
   fireEvent.click(button)
   
-  const TitleInScreen = screen.queryByText('Ferramentas Maravilhosas que Adoro')
-  expect(TitleInScreen).toBeInTheDocument()
+  await waitFor(() => {
+     const TitleInScreen = screen.queryByText('Pesquisar por tags')
+     expect(TitleInScreen).toBeInTheDocument()
+  }))
  
 });
 
