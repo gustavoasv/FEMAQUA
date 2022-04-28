@@ -16,7 +16,7 @@ it("should have labels texts and a button entrar", () => {
 
 it("should click in the button entrar and render home page", () => {
   const { container } = render(
-    <MemoryRouter initialEntries={['/']}>
+    <MemoryRouter>
       <Login />
     </MemoryRouter>
   );
