@@ -1,5 +1,5 @@
 import { Login } from "../pages/Login/index";
-import { fireEvent, render, screen } from "@testing-library/react";
+import { fireEvent, render, screen, wait} from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 
 
