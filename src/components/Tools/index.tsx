@@ -16,7 +16,7 @@ type TypeTools = {
   tags: string[];
 };
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");w
 export const Tools = (Props: Props) => {
   const [toolList, setToolList] = useState<Array<TypeTools>>([]);
   const [modal, setModal] = useState(false);

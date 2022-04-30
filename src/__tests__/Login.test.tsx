@@ -1,6 +1,6 @@
-import { Login } from "../pages/Login/index";
-import { fireEvent, render, screen, wait} from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { render, screen} from "@testing-library/react";
+import { Home } from "../pages/Home";
+import { Login } from "../pages/Login";
 
 
 it("should have labels texts and a button entrar", () => {
@@ -14,26 +14,9 @@ it("should have labels texts and a button entrar", () => {
 
 });
 
-it("should click in the button entrar and render home page", () => {
-  const { container } = render(
-    <MemoryRouter>
-      <Login />
-    </MemoryRouter>
-  );
+it("should render home page and add new tool", () => {
+  render(<Home />)
 
-  const inputEmail = container.getElementsByTagName('input')[0]
-  const inputSenha = container.getElementsByTagName('input')[1]
-  const button = container.getElementsByTagName("button")[0];
-
-  fireEvent.change(inputEmail, {target: {value: 'admin@admin.com'}})
-  fireEvent.change(inputSenha, {target: {value: 'admin123'}})
-
-  fireEvent.click(button)
-  
-  await waitFor(() => {
-     const TitleInScreen = screen.queryByText('Pesquisar por tags')
-     expect(TitleInScreen).toBeInTheDocument()
-  }))
- 
-});
-
+  const InputName = screen.getByText('+ Novo')
+  expect(InputName).toBeTruthy()
+})

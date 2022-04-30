@@ -58,10 +58,13 @@ export const NewToolForm = () => {
                   <Input value={link} onChange={e => setLink(e.target.value)} />
                 </label>
               </TopInputs>
+              <label>
+              Descrição
               <textarea value={description} onChange={e => setDescription(e.target.value)} />
+              </label>
               <label>
                 Tags
-                <Input value={tags} onChange={e => setTags(e.target.value)} />
+                <Input value={tags} onChange={e => setTags(e.target.value.toLocaleLowerCase())} />
               </label>
               <hr />
               <ButtonArea>

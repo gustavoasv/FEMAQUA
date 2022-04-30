@@ -1,6 +1,5 @@
 import { SetStateAction, useEffect, useState } from "react";
 import { HeaderTitles } from "../../components/HeaderTitles";
-import { NewToolForm } from "../NewTollForm";
 import { Tools } from "../../components/Tools";
 import { api } from "../../services/api";
 import { getToken } from "../../utils/auth";
@@ -51,7 +50,7 @@ export const Home = () => {
             placeholder="Buscar por tag"
             value={tag}
             onChange={(e) => setTag(e.target.value)} />
-          <button onClick={openFormNewTool}>+ Novo</button>
+          <button onClick={openFormNewTool} className="btnNewToll">+ Novo</button>
         </ActionsArea>
        <Tools toolTag={tagListFiltered} />
       </MainContents>

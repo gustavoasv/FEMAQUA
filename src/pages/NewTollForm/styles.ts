@@ -49,7 +49,7 @@ export const FormInputArea = styled.div`
 
   textarea {
     width: 99%;
-    margin: 30px auto;
+    margin: 10px auto;
     height: 110px;
     background-color: #f5f4f6;
     border: 1px solid #ccc;
