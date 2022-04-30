@@ -50,7 +50,7 @@ export const Home = () => {
             placeholder="Buscar por tag"
             value={tag}
             onChange={(e) => setTag(e.target.value)} />
-          <button onClick={openFormNewTool} className="btnNewToll">+ Novo</button>
+          <button onClick={openFormNewTool}>+ Novo</button>
         </ActionsArea>
        <Tools toolTag={tagListFiltered} />
       </MainContents>
