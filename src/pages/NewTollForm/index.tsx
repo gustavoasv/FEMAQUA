@@ -64,7 +64,7 @@ export const NewToolForm = () => {
               </label>
               <label>
                 Tags
-                <Input value={tags} onChange={e => setTags(e.target.value.toLocaleLowerCase())} />
+                <Input value={tags} onChange={e => setTags(e.target.value.toLowerCase())} />
               </label>
               <hr />
               <ButtonArea>
