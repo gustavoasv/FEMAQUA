@@ -10,7 +10,7 @@
 ## Features
 - [x] Login
 - [x] Cadastrar ferramentas favoritas
-- [x] Deletar uma ferramenta
+- [x] Deletar ferramentas
 - [x] Filtrar ferramentas por tags
 
 ## Tecnologias
