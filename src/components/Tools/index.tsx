@@ -37,7 +37,7 @@ export const Tools = (Props: Props) => {
     getTools()
   }, [])
   
-  const handleCloseModal = async () => {
+  const handleCloseModal = () => {
     setModal(false);
   };
 
